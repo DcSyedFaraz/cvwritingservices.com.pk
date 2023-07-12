@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ @layer utilities {
+
+    .btn{
+        @apply bg-primary-one hover:bg-primary-three transition duration-500 ease-in-out text-white text-center w-full py-2 text-lg font-semibold rounded leading-8 cursor-pointer;
+    }
+
+    .btn-disabled{
+        @apply bg-primary-two  motion-reduce:hidden cursor-not-allowed;
+    }
+
+    .btn-reverse{
+        @apply border-2 border-white bg-white hover:bg-black transition duration-500 ease-in-out text-black hover:text-white text-center w-full py-2 text-lg font-semibold rounded leading-8;
+    }
+
+
+    .heading-primary{
+        @apply text-3xl md:text-4xl text-primary-one font-bold text-center;
+    }
+
+    .active{
+        @apply text-primary-one font-bold border-b-2 border-primary-one;
+    }
+
+    .heading-secondary{
+        @apply text-3xl md:text-4xl text-primary-two font-bold ;
+    }
+
+    .input-control{
+        @apply w-full rounded bg-transparent border-[2px] border-[#818a91] text-base outline-none px-3 py-2 leading-8 transition-colors duration-200 ease-in-out;
+    }
+
+    .form-select{
+        @apply  w-full  border-[2px] border-[#818a91] rounded text-base py-3 px-3 leading-8;
+    }
+
+    .error-field {
+        @apply border-[2px] focus:border-[#818a91] focus:outline-none border-red-500;
+    }
+    /* Service section */
+    .page-section {
+        @apply font-montserrat;
+    }
+
+    .page-section h1, h2, h3{
+        @apply text-3xl md:text-4xl text-primary-two font-bold;
+    }
+
+    .page-section p{
+        @apply my-4;
+    }
+
+    .page-section ul li{
+        @apply  before:bg-primary-one before:h-4 before:w-4 before:px-[0.6rem] before:rounded-full before:mr-2 ;
+    }
+
+    /* Blog section */
+    .blog-section {
+        @apply font-montserrat;
+    }
+
+    .blog-section h1, h2, h3{
+        @apply text-3xl md:text-4xl text-[#626262] font-bold;
+    }
+
+    .blog-section  p{
+        @apply  my-2;
+    }
+
+    .blog-section  a{
+        @apply text-blue-400 hover:text-blue-600 underline;
+    }
+
+    .blog-section ul li{
+        @apply  before:bg-primary-one before:h-2 before:w-2 before:px-[0.6rem] before:rounded-full before:mr-2 before:mx-1;
+    }
+
+    .blog-section strong{
+        @apply  text-[#626262];
+    }
+}
+
+
